@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="book_genres">
+        <item>Выберите жанр</item>
+        <item>Фантастика</item>
+        <item>Детектив</item>
+        <item>Роман</item>
+        <item>Поэзия</item>
+        <item>Научная литература</item>
+        <item>Другое</item>
+        <!-- Добавьте другие жанры по вашему усмотрению -->
+    </string-array>
+</resources>

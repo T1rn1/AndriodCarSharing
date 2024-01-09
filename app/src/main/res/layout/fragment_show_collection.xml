@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyBlue"
+    tools:context=".app.ShowCollectionFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnToUpdateCollection"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/baseline_add_circle_24"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btnShowToBack"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/btnToUpdateCollection"
+        android:background="@drawable/baseline_arrow_circle_left_24" />
+
+</RelativeLayout>

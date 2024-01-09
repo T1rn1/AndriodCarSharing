@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/skyBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.UpdateFragment">
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:text="Редактировать"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUpdateTitle"
+        style="@style/RoundedEditTextStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Название"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUpdate" />
+
+    <EditText
+        android:id="@+id/edtUpdateAuthor"
+        style="@style/RoundedEditTextStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Автор"
+        android:inputType="text"
+        android:digits="абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ "
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdateTitle"
+        app:layout_constraintStart_toStartOf="@id/edtUpdateTitle"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateTitle" />
+
+    <ImageView
+        android:id="@+id/imgUpdate"
+        android:layout_width="132dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Изменить фото"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imgUpdate"
+        app:layout_constraintTop_toTopOf="@+id/imgUpdate" />
+
+    <EditText
+        android:id="@+id/edtUpdateLocation"
+        style="@style/RoundedEditTextStyle"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Место"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/btnPickImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPickImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickImage" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/RoundedSpinnerStyle"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdateAuthor"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdateAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateAuthor" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edtUpdateDescription"
+        style="@style/RoundedEditTextStyle"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:hint="Описание"
+        android:inputType="textMultiLine"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/btnUpdateBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/baseline_arrow_circle_left_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

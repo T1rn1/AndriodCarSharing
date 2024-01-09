@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.InfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:justificationMode="inter_word"
+            android:text="Регистрация и вход в систему: после установки приложения вы можете зарегистрироваться, используя свой адрес электронной почты и пароль. Если у вас уже есть аккаунт, просто введите свои данные для входа.\n\nГлавный экран: на главном экране вы увидите различные разделы, такие как «Библиотека», «Коллекции» и «О приложении». В разделе “Библиотека” вы найдете все книги, которые вы уже добавили в свою коллекцию.\n\nПоиск книг: вы можете искать книги, используя функцию поиска. Просто введите название книги или автора, и приложение покажет вам соответствующие результаты.\n\nСоздание коллекций: пользователь может группировать некоторое количество книг в коллекции. Книги в коллекции могут быть объединены одним общим признаком или иметь другое смысл группировки.\n\nРедактирование коллекций: при желании пользователь может изменить состав коллекции или полностью её очистить – удалить."
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/libraryFragment">
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.menu.app.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_collectionsFragment"
+            app:destination="@id/collectionsFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_createCallectionFragment"
+            app:destination="@id/createCallectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.menu.app.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.menu.app.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+        <argument
+            android:name="imageUri"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="genre"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.example.menu.app.CollectionsFragment"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" >
+        <action
+            android:id="@+id/action_collectionsFragment_to_showCollectionFragment"
+            app:destination="@id/showCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.menu.app.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/createCallectionFragment"
+        android:name="com.example.menu.app.CreateCollectionFragment"
+        android:label="fragment_create_callection"
+        tools:layout="@layout/fragment_create_callection" />
+    <fragment
+        android:id="@+id/showCollectionFragment"
+        android:name="com.example.menu.app.ShowCollectionFragment"
+        android:label="fragment_show_collection"
+        tools:layout="@layout/fragment_show_collection" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showCollectionFragment_to_collectionUpdateFragment"
+            app:destination="@id/collectionUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionUpdateFragment"
+        android:name="com.example.menu.app.CollectionUpdateFragment"
+        android:label="fragment_collection_update"
+        tools:layout="@layout/fragment_collection_update" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
